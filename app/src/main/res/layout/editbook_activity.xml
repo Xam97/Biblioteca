@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText para el título -->
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título del libro"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+
+    <!-- EditText para el género -->
+    <EditText
+        android:id="@+id/edit_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Género"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+
+    <!-- EditText para el número de páginas -->
+    <EditText
+        android:id="@+id/edit_page_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de páginas"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+
+    <!-- EditText para el autor -->
+    <EditText
+        android:id="@+id/edit_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del autor"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+
+    <!-- EditText para la fecha de publicación -->
+    <EditText
+        android:id="@+id/edit_publish_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha (dd/mm/yyyy)"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+
+    <!-- ImageView para mostrar la imagen del libro -->
+    <ImageView
+        android:id="@+id/edit_book_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/book"
+        android:contentDescription="Imagen del libro"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botón para cambiar la imagen -->
+    <Button
+        android:id="@+id/button_change_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cambiar Imagen"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+
+    <!-- Botón para guardar los cambios -->
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar cambios"
+        android:minHeight="48dp"
+        android:padding="16dp"/>
+</LinearLayout>

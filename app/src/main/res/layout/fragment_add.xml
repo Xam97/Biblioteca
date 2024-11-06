@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.AddFragment">
+
+    <TextView
+        android:id="@+id/text_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="@string/title_add"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TituloLibro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/TituloLibro"
+        android:layout_width="388dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="168dp"
+        android:hint="Nombre del Libro"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_add" />
+
+    <EditText
+        android:id="@+id/SinopsisLibro"
+        android:layout_width="390dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:hint="Sinopsis"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AutorLibro" />
+
+    <EditText
+        android:id="@+id/PaginasLibro"
+        android:layout_width="390dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:hint="Cantidad de páginas"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SinopsisLibro" />
+
+    <EditText
+        android:id="@+id/GeneroLibro"
+        android:layout_width="390dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:hint="Género"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PaginasLibro" />
+
+    <EditText
+        android:id="@+id/FechaPublicacionLibro"
+        android:layout_width="390dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        android:hint="Fecha de Publicación (dd/mm/aaaa)"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GeneroLibro" />
+
+    <EditText
+        android:id="@+id/AutorLibro"
+        android:layout_width="390dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:hint="Autor del Libro"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TituloLibro" />
+
+    <!-- Campo para Tomos -->
+
+    <!-- Campo para Género -->
+
+    <!-- Campo para Fecha de Publicación -->
+
+    <!-- Botón Agregar -->
+    <Button
+        android:id="@+id/boton_agregar"
+        android:layout_width="336dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_redondo"
+        android:text="Agregar"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FechaPublicacionLibro" />
+
+    <ImageView
+        android:id="@+id/PortadaLibro"
+        android:layout_width="161dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_portada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_add"
+        android:src="@drawable/book"/>
+
+    <Button
+        android:id="@+id/button_portada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="37dp"
+        android:text="Insertar imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
